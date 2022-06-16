@@ -15,8 +15,6 @@ type DataLoaderInstance[T any, K any] struct {
 	index  int
 }
 
-type Interface interface{}
-
 type CallbackLoad2D[T any, K any] func(keys []K) ([][]T, error)
 
 type CallbackLoad[T any, K any] func(keys []K) ([]T, error)
